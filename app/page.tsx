@@ -12,7 +12,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-2">
-              <Heart className="h-8 w-8 text-primary" />
+              <img src="/Gemini_Generated_Image_ivna3qivna3qivna.png" alt="Saathi Logo" className="h-12 w-12 rounded-lg object-cover" />
               <span className="text-xl font-bold text-foreground">Saathi</span>
             </div>
             <div className="hidden md:flex items-center gap-6">
@@ -245,8 +245,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <Heart className="h-6 w-6 text-primary" />
-              <span className="text-lg font-bold">MindCare</span>
+                <img src="/Gemini_Generated_Image_ivna3qivna3qivna.png" alt="Saathi Logo" className="h-10 w-10 rounded-lg object-cover" />
+              <span className="text-lg font-bold">Saathi</span>
               </div>
               <p className="text-muted-foreground">
                 Providing accessible mental health support for college students everywhere.

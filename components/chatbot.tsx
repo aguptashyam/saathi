@@ -103,7 +103,7 @@ export default function Chatbot() {
       <div className="fixed bottom-4 right-4 z-[9999]">
         <Button
           onClick={() => setIsOpen(!isOpen)}
-          className="h-14 w-14 rounded-full bg-emerald-600 hover:bg-emerald-700 shadow-2xl hover:shadow-emerald-500/25 transition-all duration-300 hover:scale-110"
+          className="h-14 w-14 rounded-full bg-pink-600 hover:bg-pink-700 shadow-2xl hover:shadow-pink-500/25 transition-all duration-300 hover:scale-110"
           size="icon"
         >
           {isOpen ? (
@@ -120,11 +120,11 @@ export default function Chatbot() {
       {/* Chat Window */}
       {isOpen && (
         <div className="fixed bottom-20 right-4 z-[9998] animate-in slide-in-from-bottom-4 duration-300">
-          <Card className="w-80 h-[500px] shadow-2xl border-emerald-200 bg-white/95 backdrop-blur-sm">
-            <CardHeader className="pb-3 bg-gradient-to-r from-emerald-50 to-teal-50 border-b">
-              <CardTitle className="text-lg text-emerald-900 flex items-center justify-between">
+          <Card className="w-80 h-[500px] shadow-2xl border-pink-200 bg-white/95 backdrop-blur-sm">
+            <CardHeader className="pb-3 bg-gradient-to-r from-pink-50 to-rose-50 border-b">
+              <CardTitle className="text-lg text-pink-900 flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <div className="h-8 w-8 bg-emerald-600 rounded-full flex items-center justify-center">
+                  <div className="h-8 w-8 bg-pink-600 rounded-full flex items-center justify-center">
                     <MessageCircle className="h-4 w-4 text-white" />
                   </div>
                   <span>Saathi Chat</span>
@@ -151,13 +151,13 @@ export default function Chatbot() {
                       <div
                         className={`max-w-[85%] p-3 rounded-2xl shadow-sm break-words ${
                           message.role === "user"
-                            ? "bg-emerald-600 text-white rounded-br-md"
+                            ? "bg-pink-600 text-white rounded-br-md"
                             : "bg-white border border-gray-200 text-gray-900 rounded-bl-md"
                         }`}
                       >
                         <p className="text-sm leading-relaxed whitespace-pre-wrap">{message.content}</p>
                         <p className={`text-xs mt-2 ${
-                          message.role === "user" ? "text-emerald-100" : "text-gray-500"
+                          message.role === "user" ? "text-pink-100" : "text-gray-500"
                         }`}>
                           {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                         </p>
@@ -168,9 +168,9 @@ export default function Chatbot() {
                     <div className="flex justify-start animate-in fade-in-0 slide-in-from-bottom-2 duration-300">
                       <div className="bg-white border border-gray-200 p-4 rounded-2xl rounded-bl-md shadow-sm">
                         <div className="flex space-x-2">
-                          <div className="w-2 h-2 bg-emerald-400 rounded-full animate-bounce"></div>
-                          <div className="w-2 h-2 bg-emerald-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-                          <div className="w-2 h-2 bg-emerald-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                          <div className="w-2 h-2 bg-pink-400 rounded-full animate-bounce"></div>
+                          <div className="w-2 h-2 bg-pink-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+                          <div className="w-2 h-2 bg-pink-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
                         </div>
                         <p className="text-xs text-gray-500 mt-2">Saathi is typing...</p>
                       </div>
@@ -186,14 +186,14 @@ export default function Chatbot() {
                     onChange={(e) => setInput(e.target.value)}
                     onKeyPress={handleKeyPress}
                     placeholder="Share what's on your mind..."
-                    className="flex-1 border-gray-300 focus:border-emerald-500 focus:ring-emerald-500"
+                    className="flex-1 border-gray-300 focus:border-pink-500 focus:ring-pink-500"
                     disabled={isLoading}
                   />
                   <Button
                     onClick={sendMessage}
                     disabled={!input.trim() || isLoading}
                     size="icon"
-                    className="bg-emerald-600 hover:bg-emerald-700 shadow-md hover:shadow-lg transition-all duration-200"
+                    className="bg-pink-600 hover:bg-pink-700 shadow-md hover:shadow-lg transition-all duration-200"
                   >
                     <Send className="h-4 w-4" />
                   </Button>

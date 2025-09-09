@@ -49,20 +49,20 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-teal-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 to-pink-100 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Heart className="h-8 w-8 text-emerald-600" />
-            <h1 className="text-2xl font-bold text-emerald-900">MindCare</h1>
+            <img src="/Gemini_Generated_Image_ivna3qivna3qivna.png" alt="Saathi Logo" className="h-12 w-12 rounded-lg object-cover" />
+            <h1 className="text-2xl font-bold text-pink-700">Saathi</h1>
           </div>
           <h2 className="text-xl font-semibold text-gray-900 mb-2">Welcome Back</h2>
           <p className="text-gray-600">Continue your mental wellness journey</p>
         </div>
 
-        <Card className="border-emerald-200 shadow-lg">
+        <Card className="border-pink-200 shadow-lg">
           <CardHeader className="space-y-1">
-            <CardTitle className="text-center text-emerald-900">Sign In</CardTitle>
+            <CardTitle className="text-center text-pink-900">Sign In</CardTitle>
             <CardDescription className="text-center">Access your personalized mental health dashboard</CardDescription>
           </CardHeader>
           <CardContent>
@@ -75,7 +75,7 @@ export default function LoginPage() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="border-emerald-200 focus:border-emerald-500"
+                  className="border-pink-200 focus:border-pink-500"
                   placeholder="your.email@university.edu"
                 />
               </div>
@@ -88,7 +88,7 @@ export default function LoginPage() {
                   required
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                  className="border-emerald-200 focus:border-emerald-500"
+                  className="border-pink-200 focus:border-pink-500"
                 />
               </div>
 
@@ -100,7 +100,7 @@ export default function LoginPage() {
 
               <Button
                 type="submit"
-                className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
+                className="w-full bg-pink-600 hover:bg-pink-700 text-white"
                 disabled={loading}
               >
                 {loading ? (
@@ -118,14 +118,14 @@ export default function LoginPage() {
             </form>
 
             <div className="mt-6 text-center space-y-4">
-              <Link href="/forgot-password" className="text-sm text-emerald-600 hover:text-emerald-700">
+              <Link href="/forgot-password" className="text-sm text-pink-600 hover:text-pink-700">
                 Forgot your password?
               </Link>
 
-              <div className="border-t border-emerald-100 pt-4">
+              <div className="border-t border-pink-100 pt-4">
                 <p className="text-sm text-gray-600">
                   Don't have an account?{" "}
-                  <Link href="/register" className="text-emerald-600 hover:text-emerald-700 font-medium">
+                  <Link href="/register" className="text-pink-600 hover:text-pink-700 font-medium">
                     Create one here
                   </Link>
                 </p>
@@ -137,7 +137,7 @@ export default function LoginPage() {
         <div className="mt-6 text-center">
           <p className="text-xs text-gray-500">
             Need immediate help?{" "}
-            <Link href="/emergency" className="text-emerald-600 hover:text-emerald-700 font-medium">
+            <Link href="/emergency" className="text-pink-600 hover:text-pink-700 font-medium">
               Crisis Resources
             </Link>
           </p>

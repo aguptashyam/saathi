@@ -87,9 +87,9 @@ export default function DashboardPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-teal-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-pink-50 to-pink-100 flex items-center justify-center">
         <div className="text-center">
-          <Heart className="h-8 w-8 text-emerald-600 animate-pulse mx-auto mb-4" />
+          <img src="/Gemini_Generated_Image_ivna3qivna3qivna.png" alt="Saathi Logo" className="h-12 w-12 mx-auto mb-4 animate-pulse rounded-lg object-cover" />
           <p className="text-gray-600">Loading your dashboard...</p>
         </div>
       </div>
@@ -123,21 +123,21 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-teal-50">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 to-pink-100">
       {/* Header */}
-      <div className="bg-white border-b border-emerald-200 shadow-sm">
+      <div className="bg-white border-b border-pink-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center gap-3">
-              <Heart className="h-8 w-8 text-emerald-600" />
+              <img src="/Gemini_Generated_Image_ivna3qivna3qivna.png" alt="Saathi Logo" className="h-10 w-10 rounded-lg object-cover" />
               <div>
-                <h1 className="text-xl font-bold text-emerald-900">Welcome back, {data.user.firstName}</h1>
+                <h1 className="text-xl font-bold text-pink-900">Welcome back, {data.user.firstName}</h1>
                 <p className="text-sm text-gray-600">
                   {data.user.university} • {data.user.yearOfStudy}
                 </p>
               </div>
             </div>
-            <Button variant="outline" onClick={handleLogout} className="border-emerald-200 bg-transparent">
+            <Button variant="outline" onClick={handleLogout} className="border-pink-200 bg-transparent">
               Sign Out
             </Button>
           </div>
@@ -158,17 +158,17 @@ export default function DashboardPage() {
         )}
 
         <Tabs defaultValue="overview" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-4 bg-white border border-emerald-200">
-            <TabsTrigger value="overview" className="data-[state=active]:bg-emerald-100">
+          <TabsList className="grid w-full grid-cols-4 bg-white border border-pink-200">
+            <TabsTrigger value="overview" className="data-[state=active]:bg-pink-100">
               Overview
             </TabsTrigger>
-            <TabsTrigger value="progress" className="data-[state=active]:bg-emerald-100">
+            <TabsTrigger value="progress" className="data-[state=active]:bg-pink-100">
               Progress
             </TabsTrigger>
-            <TabsTrigger value="resources" className="data-[state=active]:bg-emerald-100">
+            <TabsTrigger value="resources" className="data-[state=active]:bg-pink-100">
               Resources
             </TabsTrigger>
-            <TabsTrigger value="support" className="data-[state=active]:bg-emerald-100">
+            <TabsTrigger value="support" className="data-[state=active]:bg-pink-100">
               Support
             </TabsTrigger>
           </TabsList>

@@ -86,20 +86,20 @@ export default function AssessmentPage() {
 
   if (completed && result) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-teal-50 p-4">
+      <div className="min-h-screen bg-gradient-to-br from-pink-50 to-pink-100 p-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center gap-2 mb-4">
-              <CheckCircle className="h-8 w-8 text-emerald-600" />
-              <h1 className="text-2xl font-bold text-emerald-900">Assessment Complete</h1>
+              <CheckCircle className="h-8 w-8 text-pink-600" />
+              <h1 className="text-2xl font-bold text-pink-900">Assessment Complete</h1>
             </div>
             <p className="text-gray-600">Your mental health assessment results</p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
-            <Card className="border-emerald-200">
+            <Card className="border-pink-200">
               <CardHeader>
-                <CardTitle className="text-emerald-900">Your Scores</CardTitle>
+                <CardTitle className="text-pink-900">Your Scores</CardTitle>
                 <CardDescription>Scores are on a scale of 0-100 (higher scores indicate more symptoms)</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -189,12 +189,12 @@ export default function AssessmentPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-teal-50 p-4">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 to-pink-100 p-4">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Heart className="h-8 w-8 text-emerald-600" />
-            <h1 className="text-2xl font-bold text-emerald-900">Mental Health Assessment</h1>
+            <img src="/Gemini_Generated_Image_ivna3qivna3qivna.png" alt="Saathi Logo" className="h-12 w-12 rounded-lg object-cover" />
+            <h1 className="text-2xl font-bold text-pink-900">Mental Health Assessment</h1>
           </div>
           <p className="text-gray-600">This assessment will help us understand your current mental health status</p>
         </div>
@@ -209,9 +209,9 @@ export default function AssessmentPage() {
           <Progress value={progress} className="h-2" />
         </div>
 
-        <Card className="border-emerald-200 shadow-lg">
+        <Card className="border-pink-200 shadow-lg">
           <CardHeader>
-            <CardTitle className="text-emerald-900">{currentQuestionData?.question}</CardTitle>
+            <CardTitle className="text-pink-900">{currentQuestionData?.question}</CardTitle>
             <CardDescription>Please select the option that best describes your experience</CardDescription>
           </CardHeader>
           <CardContent>

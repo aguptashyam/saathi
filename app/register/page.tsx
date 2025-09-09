@@ -75,20 +75,20 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-teal-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 to-pink-100 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Heart className="h-8 w-8 text-emerald-600" />
-            <h1 className="text-2xl font-bold text-emerald-900">MindCare</h1>
+            <img src="/Gemini_Generated_Image_ivna3qivna3qivna.png" alt="Saathi Logo" className="h-12 w-12 rounded-lg object-cover" />
+            <h1 className="text-2xl font-bold text-pink-700">Saathi</h1>
           </div>
           <h2 className="text-xl font-semibold text-gray-900 mb-2">Create Your Account</h2>
           <p className="text-gray-600">Join a supportive community focused on your wellbeing</p>
         </div>
 
-        <Card className="border-emerald-200 shadow-lg">
+        <Card className="border-pink-200 shadow-lg">
           <CardHeader className="space-y-1">
-            <CardTitle className="text-center text-emerald-900">Student Registration</CardTitle>
+            <CardTitle className="text-center text-pink-900">Student Registration</CardTitle>
             <CardDescription className="text-center">Your information is kept private and secure</CardDescription>
           </CardHeader>
           <CardContent>
@@ -102,7 +102,7 @@ export default function RegisterPage() {
                     required
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                    className="border-emerald-200 focus:border-emerald-500"
+                    className="border-pink-200 focus:border-pink-500"
                   />
                 </div>
                 <div className="space-y-2">
@@ -113,7 +113,7 @@ export default function RegisterPage() {
                     required
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                    className="border-emerald-200 focus:border-emerald-500"
+                    className="border-pink-200 focus:border-pink-500"
                   />
                 </div>
               </div>
@@ -126,7 +126,7 @@ export default function RegisterPage() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="border-emerald-200 focus:border-emerald-500"
+                  className="border-pink-200 focus:border-pink-500"
                   placeholder="your.email@university.edu"
                 />
               </div>
@@ -139,7 +139,7 @@ export default function RegisterPage() {
                   required
                   value={formData.university}
                   onChange={(e) => setFormData({ ...formData, university: e.target.value })}
-                  className="border-emerald-200 focus:border-emerald-500"
+                  className="border-pink-200 focus:border-pink-500"
                   placeholder="Your University Name"
                 />
               </div>
@@ -151,7 +151,7 @@ export default function RegisterPage() {
                     value={formData.yearOfStudy}
                     onValueChange={(value) => setFormData({ ...formData, yearOfStudy: value })}
                   >
-                    <SelectTrigger className="border-emerald-200 focus:border-emerald-500">
+                    <SelectTrigger className="border-pink-200 focus:border-pink-500">
                       <SelectValue placeholder="Select year" />
                     </SelectTrigger>
                     <SelectContent>
@@ -171,7 +171,7 @@ export default function RegisterPage() {
                     type="text"
                     value={formData.studentId}
                     onChange={(e) => setFormData({ ...formData, studentId: e.target.value })}
-                    className="border-emerald-200 focus:border-emerald-500"
+                    className="border-pink-200 focus:border-pink-500"
                   />
                 </div>
               </div>
@@ -184,7 +184,7 @@ export default function RegisterPage() {
                   required
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                  className="border-emerald-200 focus:border-emerald-500"
+                  className="border-pink-200 focus:border-pink-500"
                   placeholder="At least 8 characters"
                 />
               </div>
@@ -197,7 +197,7 @@ export default function RegisterPage() {
                   required
                   value={formData.confirmPassword}
                   onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
-                  className="border-emerald-200 focus:border-emerald-500"
+                  className="border-pink-200 focus:border-pink-500"
                 />
               </div>
 
@@ -207,14 +207,14 @@ export default function RegisterPage() {
                 </Alert>
               )}
 
-              <div className="flex items-center gap-2 text-sm text-gray-600 bg-emerald-50 p-3 rounded-lg">
-                <Shield className="h-4 w-4 text-emerald-600" />
+              <div className="flex items-center gap-2 text-sm text-gray-600 bg-pink-50 p-3 rounded-lg">
+                <Shield className="h-4 w-4 text-pink-600" />
                 <span>Your data is encrypted and protected by HIPAA-compliant security</span>
               </div>
 
               <Button
                 type="submit"
-                className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
+                className="w-full bg-pink-600 hover:bg-pink-700 text-white"
                 disabled={loading}
               >
                 {loading ? (
@@ -231,7 +231,7 @@ export default function RegisterPage() {
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-600">
                 Already have an account?{" "}
-                <Link href="/login" className="text-emerald-600 hover:text-emerald-700 font-medium">
+                <Link href="/login" className="text-pink-600 hover:text-pink-700 font-medium">
                   Sign in here
                 </Link>
               </p>

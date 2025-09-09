@@ -1,22 +1,16 @@
-# TODO: Change Chatbot from Hugging Face to Gemini API
+# TODO: Replace Logos and Change Color Scheme to Light Pink
 
-## Completed Tasks
-- [x] Update requirements.txt to replace transformers/torch with google-generativeai
-- [x] Modify app.py to use Gemini API instead of Hugging Face model
-- [x] Replace response generation logic with Gemini API calls
-- [x] Keep mental health keyword responses intact
-- [x] Set GEMINI_API_KEY environment variable
-- [x] Install updated dependencies (run install.bat or pip install -r requirements.txt)
-- [x] Test the chatbot microservice
-- [x] Verify responses are generated correctly
+## Tasks
+- [x] Update app/globals.css to change color scheme from emerald to light pink
+- [x] Replace Heart icons with Gemini generated image in app/page.tsx (nav and footer)
+- [x] Replace Heart icons and update colors in app/login/page.tsx
+- [x] Replace Heart icons and update colors in app/register/page.tsx
+- [x] Replace Heart icons and update colors in app/dashboard/page.tsx
+- [x] Replace Heart icons and update colors in app/assessment/page.tsx
+- [x] Fix app name from "MindCare" to "Saathi" in footer
 
 ## Notes
-- Ensure GEMINI_API_KEY is set as an environment variable before running the microservice
-- The microservice runs on port 5001
-- Mental health keyword responses are preserved for specific terms like depression, anxiety, etc.
-- General responses now use Gemini API with mental health context
-- Successfully tested with sample message "Hello, I am feeling a bit stressed"
-- Response: "Hello there! I'm Saathi and it's okay to feel stressed sometimes..."
-- Flask app is running successfully on http://localhost:5001
-- Health endpoint working: GET /health returns {"status": "healthy", "service": "saathi-chatbot"}
-- Chat endpoint working: POST /chat returns AI-generated empathetic responses
+- Use the image: /Gemini_Generated_Image_ivna3qivna3qivna.png
+- Change emerald classes to pink equivalents (e.g., bg-emerald-50 to bg-pink-50)
+- Ensure consistency across all pages
+- [x] Improved logo styling: Made logos bigger (h-12 w-12) and added rounded corners with object-cover
