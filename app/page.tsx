@@ -302,14 +302,14 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Mail className="h-4 w-4" />
-                  <span>support@mindcare.edu</span>
+                  <span>support@saathi.edu</span>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2024 MindCare. All rights reserved. • Confidential & HIPAA Compliant</p>
+            <p>&copy; 2025 Saathi. All rights reserved. • Confidential & HIPAA Compliant</p>
           </div>
         </div>
       </footer>
