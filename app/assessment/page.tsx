@@ -107,7 +107,7 @@ export default function AssessmentPage() {
                   <div key={category} className="space-y-2">
                     <div className="flex justify-between">
                       <span className="capitalize font-medium">{category}</span>
-                      <span className="text-sm text-gray-600">{score}/100</span>
+                      <span className="text-sm text-gray-600">{score as number}/100</span>
                     </div>
                     <Progress value={score as number} className="h-2" />
                   </div>
